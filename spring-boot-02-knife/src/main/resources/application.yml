@@ -1,0 +1,8 @@
+spring:
+    application:
+        name: spring-boot-02-knife
+    profiles:
+        active: dev
+    mvc:
+        pathmatch:
+            matching-strategy: ant_path_matcher

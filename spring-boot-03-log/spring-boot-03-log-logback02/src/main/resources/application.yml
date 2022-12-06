@@ -1,0 +1,7 @@
+spring:
+    application:
+        name: spring-boot-03-log-logback02
+    profiles:
+        active: dev
+logging:
+    config: classpath:logback-spring.xml

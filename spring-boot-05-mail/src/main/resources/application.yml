@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: spring-boot-05-mail
+  profiles:
+    active: dev
+  mail:
+    default-encoding: UTF-8
+    protocol: smtps
+    host: smtp.163.com
+    port: 465
+    username: diydaniel@163.com
+    password: AQEHYPLYVCAYNCQO
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enabled: true
+            required: true
+          ssl:
+            enabled: true
+            sockedFactory:
+              port: 465
+              class: javax.net.ssl.SSLSocketFactory
+#    启用加密链接
+logging:
+  config: classpath:logback-spring.xml
